@@ -57,7 +57,7 @@ A modern full-stack web application built with:
 - Secure auth with `better-auth` and `argon2`
 - Schema validation with `zod` + `react-hook-form`
 - Accessible UI via `shadcn/ui`
-- Image optimization with `@imagekit/next`
+- Image upload with `@imagekit/next`
 - Email support via `nodemailer`
 
 ---
