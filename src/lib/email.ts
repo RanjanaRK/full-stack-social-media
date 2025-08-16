@@ -8,14 +8,6 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const styles = {
-  container:
-    "max-width:500px;margin:20px auto;padding:20px;border:1px solid #ddd;border-radius:6px;",
-  heading: "font-size:20px;color:#333;",
-  paragraph: "font-size:16px;",
-  url: "display:inline-block;margin-top:15px;padding:10px 15px;background:#007bff;color:#fff;text-decoration:none;border-radius:4px;",
-};
-
 export const sendEmail = async ({
   to,
   subject,
@@ -31,12 +23,13 @@ export const sendEmail = async ({
       to,
       subject,
       html: `
-       
-         <div style="${styles.container}">
-      <h1 style="${styles.heading}">${subject}</h1>
-      <p style="${styles.paragraph}">${text}</p>
-    
-    </div>
+         <div style="max-width:500px;margin:20px auto;padding:20px;border:1px solid #ddd;border-radius:6px;background-color:#ffffff;font-family:Arial,sans-serif;">
+          <h1 style="font-size:20px;color:#333333;margin-bottom:15px;">${subject}</h1>
+          <p style="font-size:16px;color:#555555;line-height:1.5;margin-bottom:15px;">${text}</p>
+          <p style="font-size:14px;color:#888888;line-height:1.5;margin-bottom:20px;">
+            If you did not request this, please ignore this email.
+          </p>     
+        </div>
       `,
     });
 
@@ -46,7 +39,3 @@ export const sendEmail = async ({
     throw new Error("Failed to send email");
   }
 };
-
-// <p>You requested a password reset.</p>
-// <p>${text}</p>
-// <p>If you did not request this, please ignore this email.</p>
