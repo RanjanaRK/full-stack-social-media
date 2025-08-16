@@ -73,9 +73,27 @@ A modern full-stack web application built with:
 This project uses PostgreSQL via Neon and Prisma ORM.
 
 - Step 1: Create a Neon Database
+
 - Step 2: Configure .env
+
+```env
+DATABASE_URL="postgresql://<username>:<password>@<host>:<port>/<database>?sslmode=require"
+```
+
 - Step 3: Push Prisma Schema
+
+```bun
+
+bunx prisma db push
+```
+
 - Step 4 (Optional): Open Prisma Studio
+
+```bun
+
+bunx prisma studio
+
+```
 
 ### 4. Configure environment variables:
 
