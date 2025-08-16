@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<!-- This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
@@ -34,9 +34,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details. -->
 
-# 🌐 Full-Stack Social Media web application with Next.js, Prisma, Neon PostgreSQL, and BetterAuth
+# Full-Stack Social Media web application with Next.js, Prisma, Neon PostgreSQL, and BetterAuth
 
 A modern full-stack web application built with:
 
@@ -52,15 +52,13 @@ A modern full-stack web application built with:
 
 ---
 
-## 🚀 Features
+## Features
 
-- ⚡ Ultra-fast Bun dev runtime
-- 🔐 Secure auth with `better-auth` and `argon2`
-- 🧠 Schema validation with `zod` + `react-hook-form`
-- 🎨 Accessible UI via Radix primitives and shadcn/ui
-- 📸 Image optimization with `@imagekit/next`
-- 📧 Email support via `nodemailer`
-- 🧼 Developer-friendly DX with modular architecture
+- Secure auth with `better-auth` and `argon2`
+- Schema validation with `zod` + `react-hook-form`
+- Accessible UI via `shadcn/ui`
+- Image optimization with `@imagekit/next`
+- Email support via `nodemailer`
 
 ---
 
@@ -73,15 +71,20 @@ A modern full-stack web application built with:
 ### 3. Database Setup
 
 This project uses PostgreSQL via Neon and Prisma ORM.
-Step 1: Create a Neon Database
-Step 2: Configure .env
-Step 3: Push Prisma Schema
-Step 4 (Optional): Open Prisma Studio
 
-### 4. Configure environment variables: Create a .env file based on .env.example and Update the values.
+- Step 1: Create a Neon Database
+- Step 2: Configure .env
+- Step 3: Push Prisma Schema
+- Step 4 (Optional): Open Prisma Studio
+
+### 4. Configure environment variables:
+
+Create a .env file based on .env.example and Update the values.
 
 ### 5. Start the development server:
 
 ```bash
 bun dev
 ```
+
+The app will be available at http://localhost:3000
