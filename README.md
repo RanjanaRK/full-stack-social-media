@@ -62,7 +62,7 @@ A modern full-stack web application built with:
 
 ---
 
-## 🧑‍💻 Getting Started
+##  Getting Started
 
 ### 1. Clone the repo
 
