@@ -57,6 +57,7 @@ const ProfileHeader = ({
           <AvatarImage
             src={profile.image || ""}
             alt={`${profile.name} avatar`}
+            className="object-cover"
           />
           <AvatarFallback>{profile.name}</AvatarFallback>
         </Avatar>

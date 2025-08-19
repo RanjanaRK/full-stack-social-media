@@ -34,7 +34,7 @@ export default function MobileNav() {
   return (
     <>
       <header className="bg-background fixed top-0 right-0 left-0 z-50 flex items-center justify-between border-b px-4 py-2 shadow-sm md:hidden">
-        <h1 className="text-xl font-bold">Echo</h1>
+        <h1 className="text-xl font-bold">ConnectSphere</h1>
 
         <div className="flex items-center gap-2 md:hidden">
           <SearchBar />

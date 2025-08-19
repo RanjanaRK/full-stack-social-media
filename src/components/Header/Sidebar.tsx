@@ -35,7 +35,9 @@ const Sidebar = () => {
           "w-16 md:w-20 lg:w-64",
         )}
       >
-        <div className="p-4 text-xl font-bold">Echo</div>
+        <div className="hidden p-4 text-xl font-bold lg:block">
+          ConnectSphere
+        </div>
 
         <nav className="flex flex-col items-center space-y-6 p-4 lg:items-start">
           {items.map((item) => (
