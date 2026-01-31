@@ -17,6 +17,8 @@ A modern full-stack web application built with:
 ![Screenshot](./public/screenshot.png)
 ![Screenshot](./public/screenshot2.png)
 
+---
+
 ## Features
 
 - Secure auth with `better-auth` and `argon2`
