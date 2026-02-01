@@ -73,6 +73,3 @@ bun dev
 ```
 
 The app will be available at http://localhost:3000
-
-![Screenshot](./public/screenshot.png)
-![Screenshot](./public/screenshot2.png)
