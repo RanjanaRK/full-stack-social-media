@@ -1,9 +1,10 @@
 import getPostById from "@/actions/feed/getPostById";
 import FeedCard from "@/components/Feed/FeedCard";
 import MainLayout from "@/components/MainLayout";
+export const dynamic = "force-dynamic";
 
-const page = async ({ params }: { params: Promise<{ postId: string }> }) => {
-  const { postId } = await params;
+const page = async ({ params }: { params: { postId: string } }) => {
+  const { postId } = params;
   console.log(postId);
 
   const { data } = await getPostById({ postId: postId });
