@@ -42,7 +42,7 @@ const editUserPost = async ({
       },
     });
 
-    revalidateTag(`user-profile-${session.user.id}`);
+    revalidateTag(`user-profile-${session.user.id}`, "default");
 
     return {
       success: true,

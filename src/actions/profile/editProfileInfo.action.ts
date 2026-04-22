@@ -30,7 +30,7 @@ const editProfileInfo = async ({ name, bio }: EditProfileInfo) => {
       },
     });
 
-    revalidateTag(`user-profile-${userId}`);
+    revalidateTag(`user-profile-${userId}`, "default");
 
     return {
       success: true,

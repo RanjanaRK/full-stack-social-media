@@ -24,7 +24,7 @@ const editProfileImage = async (imageUrl: string) => {
       },
     });
 
-    revalidateTag(`user-profile-${userId}`);
+    revalidateTag(`user-profile-${userId}`, "default");
 
     return {
       success: true,

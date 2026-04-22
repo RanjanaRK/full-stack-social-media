@@ -55,7 +55,7 @@ const deleteComment = async (commentId: string) => {
       },
     });
 
-    revalidateTag(`user-post-${comment.post.id}`);
+    revalidateTag(`user-post-${comment.post.id}`, "default");
 
     return {
       success: true,

@@ -41,7 +41,7 @@ const createLike = async ({ postId, emoji }: CreateLikeType) => {
           },
         });
 
-        revalidateTag(postId);
+        revalidateTag(postId, "default");
 
         return {
           success: true,
@@ -57,7 +57,7 @@ const createLike = async ({ postId, emoji }: CreateLikeType) => {
           },
         });
 
-        revalidateTag(postId);
+        revalidateTag(postId, "default");
         return {
           success: true,
           message: "Reaction updated",
@@ -73,7 +73,7 @@ const createLike = async ({ postId, emoji }: CreateLikeType) => {
       },
     });
 
-    revalidateTag(postId);
+    revalidateTag(postId, "defaut");
 
     return {
       success: true,
