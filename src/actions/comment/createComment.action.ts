@@ -49,7 +49,7 @@ const createComment = async ({ content, postId }: createCommentProps) => {
       },
     });
 
-    revalidateTag(`user-post-${postId}`);
+    revalidateTag("user-post-${postId}", "default");
 
     return {
       success: true,
